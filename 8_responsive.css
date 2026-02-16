@@ -1,0 +1,161 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+}
+
+
+
+
+body {
+  margin: 0;
+  color: black;
+  background: lightcyan;
+}
+
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+
+header,
+main,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+
+main section,
+main article,
+figure {
+  background: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+
+header {
+  padding-top: 24px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+address {
+  font-style: normal;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 12px;
+  border: 1px solid whitesmoke;
+  border-radius: 1000px;
+  background: white;
+  color: black;
+}
+
+nav a:hover,
+nav a:focus {
+  background: wheat;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
+}
+
+
+ul {
+  margin: 10px 0 0 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+footer {
+  color: grey;
+  padding-bottom: 25px;
+}
+
+/* PC */
+@media (min-width: 601px) {
+ 
+  header,
+  main,
+  footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  nav a {
+    border-radius: 1000px;
+    padding: 10px 16px;
+    text-align: center;
+  }
+}
+
+/* Mobile*/
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  header,
+  main,
+  footer {
+    padding: 14px;
+  }
+}
+
+
